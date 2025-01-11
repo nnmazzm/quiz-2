@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileapplications22.R
-import com.example.mobileapplications22.Story
+import com.example.mobileapplications22.models.Story
 import com.example.mobileapplications22.databinding.ItemStoryBinding
 
 class RcViewStoryAdapter : ListAdapter<Story, RcViewStoryAdapter.Holder>(Comparator()) {

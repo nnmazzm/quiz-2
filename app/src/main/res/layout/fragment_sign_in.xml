@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    android:gravity="center"
+    tools:context=".onBoarding.SignInFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/instagram_logo"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/etEmailSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter email"/>
+
+    <EditText
+        android:id="@+id/etPasswordSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter password"
+        android:layout_marginTop="10dp"
+        android:inputType="numberPassword"/>
+
+    <TextView
+        android:id="@+id/tvForgotPasswordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot password?"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvGoToSignUpSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="not registered yet? go to Sign Up"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

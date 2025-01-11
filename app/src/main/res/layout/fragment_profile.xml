@@ -125,15 +125,28 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="10dp"
         android:background="@color/white"
         android:fontFamily="@font/allerta_stencil"
         android:text="Edit Profile"
         android:textAllCaps="false"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/btnLogOut"
         app:layout_constraintStart_toStartOf="@+id/tvDescription"
         app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@color/white"
+        android:fontFamily="@font/allerta_stencil"
+        app:layout_constraintBottom_toBottomOf="@+id/bEditProfile"
+        app:layout_constraintTop_toTopOf="@id/bEditProfile"
+        app:layout_constraintEnd_toEndOf="@id/rcViewProfile"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcViewProfile"
@@ -141,8 +154,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         tools:itemCount="1"
+        android:layout_marginEnd="10dp"
         tools:listitem="@layout/item_story"
-        app:layout_constraintEnd_toEndOf="@+id/bEditProfile"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/bEditProfile"
         app:layout_constraintTop_toBottomOf="@+id/bEditProfile" />
 
